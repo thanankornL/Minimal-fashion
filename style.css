@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 0.5;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #111;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  height: 70vh;
+  background: url("https://images.unsplash.com/photo-1441986300917-64674bd600d8") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background: rgba(255,255,255,0.85);
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.hero-text button {
+  padding: 10px 25px;
+  border: 1px solid #111;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background: #111;
+  color: white;
+}
+
+/* Products */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.card p {
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 18px 30px;
+  }
+
+  .container {
+    padding: 50px 20px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-text {
+    padding: 30px 40px;
+  }
+
+  .products {
+    gap: 20px;
+  }
+
+  .size-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 20px;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-text {
+    padding: 25px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  /* Product Grid */
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    padding: 40px 20px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  /* Container */
+  .container {
+    padding: 40px 16px;
+  }
+
+  /* Size Table เลื่อนแนวนอนได้ */
+  .size-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Calculator */
+  .size-box {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* Cart */
+  .cart {
+    padding: 20px;
+  }
+
+  /* Contact */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .category {
+    font-size: 18px;
+  }
+}

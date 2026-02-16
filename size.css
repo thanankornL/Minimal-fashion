@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: white;
+  color: #111;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 0.5;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.mt {
+  margin-top: 60px;
+}
+
+/* Table */
+.size-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.size-table th,
+.size-table td {
+  border: 1px solid #eee;
+  padding: 12px;
+  text-align: center;
+}
+
+.size-table th {
+  background: #fafafa;
+}
+
+/* Calculator */
+.size-box {
+  margin-top: 20px;
+  margin-left: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.size-box input {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.size-box button {
+  padding: 12px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Result Box */
+#result {
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* เมื่อมีผลลัพธ์ */
+#result.show {
+  border-color: #111;
+  background: #111;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* ข้อความคำแนะนำ */
+.result-note {
+  font-size: 13px;
+  color: #777;
+  margin-top: 6px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 18px 30px;
+  }
+
+  .container {
+    padding: 50px 20px;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-text {
+    padding: 30px 40px;
+  }
+
+  .products {
+    gap: 20px;
+  }
+
+  .size-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 20px;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-text {
+    padding: 25px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  /* Product Grid */
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    padding: 40px 20px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  /* Container */
+  .container {
+    padding: 40px 16px;
+  }
+
+  /* Size Table เลื่อนแนวนอนได้ */
+  .size-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Calculator */
+  .size-box {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* Cart */
+  .cart {
+    padding: 20px;
+  }
+
+  /* Contact */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .category {
+    font-size: 18px;
+  }
+}

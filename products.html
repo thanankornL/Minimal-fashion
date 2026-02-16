@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้า</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">MINIMAL</h1>
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="products.html">สินค้า</a>
+     <a href="size.html">เทียบไซส์</a>
+    <a href="contact.html">ติดต่อ</a>
+  </nav>
+</header>
+
+<section class="container">
+  <h2>สินค้าทั้งหมด</h2>
+
+  <!-- เสื้อยืด -->
+  <h3 class="category">เสื้อยืด</h3>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+      <h4>เสื้อยืดมินิมอลขาว</h4>
+      <p>299 บาท</p>
+      <button onclick="addToCart('เสื้อยืดมินิมอลขาว',299)">เพิ่มลงตะกร้า</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+      <h4>เสื้อยืดโอเวอร์ไซส์</h4>
+      <p>350 บาท</p>
+      <button onclick="addToCart('เสื้อยืดโอเวอร์ไซส์',350)">เพิ่มลงตะกร้า</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+      <h4>เสื้อยืดสตรีท</h4>
+      <p>420 บาท</p>
+      <button onclick="addToCart('เสื้อยืดสตรีท',420)">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- เสื้อฮู้ด -->
+  <h3 class="category">เสื้อฮู้ด</h3>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7">
+      <h4>เสื้อฮู้ดเรียบ</h4>
+      <p>599 บาท</p>
+      <button onclick="addToCart('เสื้อฮู้ดเรียบ',599)">เพิ่มลงตะกร้า</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975661595-6453be3f7070">
+      <h4>ฮู้ดซิปหน้า</h4>
+      <p>650 บาท</p>
+      <button onclick="addToCart('ฮู้ดซิปหน้า',650)">เพิ่มลงตะกร้า</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb">
+      <h4>ฮู้ดโอเวอร์ไซส์</h4>
+      <p>720 บาท</p>
+      <button onclick="addToCart('ฮู้ดโอเวอร์ไซส์',720)">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- แจ็คเก็ต -->
+  <h3 class="category">แจ็คเก็ต</h3>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975922327-4d3d1a9c3f1b">
+      <h4>แจ็คเก็ตคลีน</h4>
+      <p>899 บาท</p>
+      <button onclick="addToCart('แจ็คเก็ตคลีน',899)">เพิ่มลงตะกร้า</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520974735194-79c48fbc1e65">
+      <h4>แจ็คเก็ตยีนส์</h4>
+      <p>990 บาท</p>
+      <button onclick="addToCart('แจ็คเก็ตยีนส์',990)">เพิ่มลงตะกร้า</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1">
+      <h4>แจ็คเก็ตสตรีท</h4>
+      <p>1050 บาท</p>
+      <button onclick="addToCart('แจ็คเก็ตสตรีท',1050)">เพิ่มลงตะกร้า</button>
+    </div>
+  </div>
+
+  <!-- ตะกร้า -->
+  <div class="cart">
+    <h3>ตะกร้าสินค้า</h3>
+    <ul id="cart-items"></ul>
+    <p id="total">รวม: 0 บาท</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
