@@ -235,3 +235,32 @@ h2 {
     font-size: 18px;
   }
 }
+
+.cute-card {
+  margin-top: 30px;
+  margin-bottom:30px;
+  background: #f1f1f1;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cute-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.cute-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.cute-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
